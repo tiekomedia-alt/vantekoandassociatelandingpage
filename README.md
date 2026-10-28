@@ -18,7 +18,7 @@ Personal executive landing page for **David Vanteko**: Attorney, Compliance Offi
 - **Personal Brand Focus**: Highlights your professional photo (`assets/images/david-vanteko.jpg`).
 - **Core Pillars**:
   1. Attorney & Legal Counsel
-  2. Compliance Official
+  2. Compliance Officer
   3. Digital Strategist
   4. Global Virtual Manager
 - **Calendly Integration**: Direct consultation booking via `https://calendly.com/vantekoandassociates/30min` with both popup and embedded on-page scheduler.
