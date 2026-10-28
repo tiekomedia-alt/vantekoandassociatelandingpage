@@ -1,0 +1,26 @@
+{
+  "name": "David Vanteko | Vanteko & Associates",
+  "short_name": "David Vanteko",
+  "description": "Attorney, Compliance Officer, Digital Strategist & Global Virtual Manager",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111C2E",
+  "theme_color": "#111C2E",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
