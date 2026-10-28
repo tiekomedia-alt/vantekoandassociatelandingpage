@@ -1,6 +1,6 @@
 # David Vanteko — Executive Landing Page
 
-Personal executive landing page for **David Vanteko**: Attorney, Compliance Official, Digital Strategist, and Global Virtual Manager.
+Personal executive landing page for **David Vanteko**: Attorney, Compliance Officer, Digital Strategist, and Global Virtual Manager.
 
 ## 🎨 Color Palette
 
