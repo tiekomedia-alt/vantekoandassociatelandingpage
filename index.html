@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Vanteko | Attorney, Compliance Official, Digital Strategist &amp; Global Virtual Manager</title>
-  <meta name="description" content="Hi, my name is David Vanteko — an Attorney, Compliance Official, Digital Strategist, and Global Virtual Manager. Book a consultation today.">
+  <title>David Vanteko | Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager</title>
+  <meta name="description" content="Hi, my name is David Vanteko — Attorney, Compliance Official, Digital Strategist, and Global Virtual Manager. Book a consultation.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="David Vanteko | Legal, Compliance &amp; Digital Strategy">
-  <meta property="og:description" content="Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager. Let's discuss your next breakthrough.">
+  <meta property="og:title" content="David Vanteko">
+  <meta property="og:description" content="Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager">
   <meta property="og:image" content="assets/images/david-vanteko.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,18 +26,16 @@
           colors: {
             navy: {
               DEFAULT: '#111C2E',
-              light: '#18263e',
-              deep: '#0b1320',
-              card: '#152238'
+              surface: '#172439',
+              border: '#23344e'
             },
             gold: {
               DEFAULT: '#C6A66B',
-              light: '#d8ba7c',
-              dark: '#af8c4f'
+              hover: '#b89758'
             },
             ivory: {
               DEFAULT: '#F6F2E9',
-              muted: '#dfdacd'
+              muted: '#c8c2b5'
             }
           },
           fontFamily: {
@@ -52,359 +50,139 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Calendly Widget CSS & JS (for seamless popup scheduling) -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <!-- Calendly Script -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-navy text-ivory antialiased selection:bg-gold selection:text-navy">
+<body class="bg-[#111C2E] text-[#F6F2E9] antialiased">
 
-  <!-- NAVBAR -->
-  <header class="w-full border-b border-navy-light/80 bg-navy/90 backdrop-blur-md sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
-      
-      <!-- Logo / Monogram -->
-      <a href="#" class="flex items-center space-x-3 group">
-        <div class="w-10 h-10 rounded-lg bg-gold/15 border border-gold/40 flex items-center justify-center text-gold font-serif font-bold text-lg group-hover:bg-gold group-hover:text-navy transition-all duration-300">
-          DV
-        </div>
-        <div class="flex flex-col">
-          <span class="font-serif font-bold text-lg sm:text-xl text-white tracking-tight leading-tight">
-            David Vanteko
-          </span>
-          <span class="text-[10px] sm:text-xs text-gold tracking-wider uppercase font-medium">
-            Legal &bull; Compliance &bull; Operations
-          </span>
-        </div>
+  <!-- TOP HEADER -->
+  <header class="w-full border-b border-[#23344e] bg-[#111C2E]">
+    <div class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="#" class="font-serif font-bold text-xl text-white tracking-tight">
+        David Vanteko
       </a>
 
-      <!-- Quick Action Buttons -->
-      <div class="flex items-center space-x-4">
-        <a href="#book" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold text-ivory hover:text-gold transition">
-          <i data-lucide="clock" class="w-3.5 h-3.5 text-gold"></i>
-          <span>Check Availability</span>
+      <div class="flex items-center space-x-6 text-sm">
+        <a href="mailto:davidvanteko@gmail.com" class="text-[#c8c2b5] hover:text-[#C6A66B] transition hidden sm:inline-block">
+          davidvanteko@gmail.com
         </a>
-
-        <a href="https://calendly.com/vantekoandassociates/30min" target="_blank" rel="noopener noreferrer" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg bg-gold text-navy font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg shadow-gold/10 flex items-center gap-2">
-          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-          <span>Book Consultation</span>
+        <a 
+          href="https://calendly.com/vantekoandassociates/30min" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="px-4 py-2 rounded bg-[#C6A66B] hover:bg-[#b89758] text-[#111C2E] font-semibold text-xs tracking-wide transition"
+        >
+          Book Consultation
         </a>
       </div>
-
     </div>
   </header>
 
-  <!-- MAIN HERO SECTION -->
-  <main class="max-w-6xl mx-auto px-5 sm:px-8 py-12 sm:py-20 lg:py-24">
-    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-5xl mx-auto px-6 py-12 sm:py-16">
+    
+    <!-- HERO / PROFILE SECTION -->
+    <section class="grid md:grid-cols-12 gap-10 lg:gap-14 items-center">
       
-      <!-- PHOTO COLUMN -->
-      <div class="lg:col-span-5 flex justify-center order-1 lg:order-2">
-        <div class="relative w-full max-w-sm sm:max-w-md">
-          
-          <!-- Outer Decorative Glow -->
-          <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-gold/30 via-transparent to-gold/20 blur-xl opacity-60"></div>
-
-          <!-- Main Portrait Container -->
-          <div class="relative rounded-3xl overflow-hidden border-2 border-gold/40 shadow-2xl bg-navy-card">
-            <img 
-              src="assets/images/david-vanteko.jpg" 
-              alt="David Vanteko - Attorney, Compliance Official, Digital Strategist & Global Virtual Manager" 
-              class="w-full h-[420px] sm:h-[480px] object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-            >
-            
-            <!-- Bottom Card Overlay -->
-            <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-navy-deep via-navy/90 to-transparent">
-              <div class="flex items-center space-x-2 text-xs font-bold text-gold uppercase tracking-widest">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Available for Consultations &amp; Advisory</span>
-              </div>
-              <h2 class="font-serif text-xl font-bold text-white mt-1">David Vanteko</h2>
-              <p class="text-xs text-ivory-muted mt-0.5">Vanteko &amp; Associates</p>
-            </div>
-          </div>
-
-          <!-- Corner Accent Badge -->
-          <div class="absolute -top-4 -right-4 bg-navy-deep border border-gold/40 rounded-xl p-3 shadow-xl hidden sm:flex items-center space-x-2">
-            <i data-lucide="shield-check" class="w-5 h-5 text-gold"></i>
-            <div class="text-[11px] leading-tight font-medium text-ivory">
-              <span class="font-bold text-white block">Advisory &bull; Strategy</span>
-              Global Operations
-            </div>
-          </div>
-
+      <!-- PHOTO -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="w-full max-w-sm rounded-lg overflow-hidden border border-[#23344e] bg-[#172439]">
+          <img 
+            src="assets/images/david-vanteko.jpg" 
+            alt="David Vanteko" 
+            class="w-full h-[420px] sm:h-[460px] object-cover object-top"
+          >
         </div>
       </div>
 
-      <!-- TEXT / NARRATIVE COLUMN -->
-      <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+      <!-- BIO / INTRODUCTION -->
+      <div class="md:col-span-7 space-y-6">
         
-        <!-- Salutation Badge -->
-        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-gold/30 bg-gold/10 text-gold text-xs font-semibold tracking-wider uppercase">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-          <span>Welcome &bull; Direct Executive Access</span>
+        <div>
+          <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            Hi, my name is <br>
+            <span class="text-[#C6A66B]">David Vanteko</span>.
+          </h1>
+          
+          <p class="mt-3 text-base sm:text-lg font-medium text-[#F6F2E9]">
+            Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager
+          </p>
         </div>
 
-        <!-- Headline -->
-        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-          Hi, my name is <br class="hidden sm:block">
-          <span class="text-gold">David Vanteko</span>.
-        </h1>
-
-        <!-- Professional Titles Bar -->
-        <div class="flex flex-wrap items-center gap-2 text-sm sm:text-base font-semibold text-ivory">
-          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Attorney</span>
-          <span class="text-gold">&bull;</span>
-          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Compliance Official</span>
-          <span class="text-gold">&bull;</span>
-          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Digital Strategist</span>
-          <span class="text-gold">&bull;</span>
-          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Global Virtual Manager</span>
-        </div>
-
-        <!-- Personal Introduction & Pitch -->
-        <p class="text-base sm:text-lg text-ivory-muted leading-relaxed font-light">
-          I bridge legal precision with modern digital operational excellence. Whether you need watertight corporate compliance, strategic legal counsel, cutting-edge digital execution, or seamless global virtual operations — <strong class="text-white font-medium">let’s discuss your objectives.</strong>
+        <p class="text-[#c8c2b5] text-base leading-relaxed">
+          I work with businesses, founders, and growing organizations to navigate regulatory compliance, structure corporate legal agreements, design modern digital systems, and coordinate global cross-border operations.
         </p>
 
-        <!-- PRIMARY CALL TO ACTION BUTTONS -->
-        <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          
-          <!-- Calendly Booking Button -->
+        <p class="text-white font-medium text-base">
+          Click the link below, let's discuss.
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
           <a 
-            id="book-consultation-btn"
             href="https://calendly.com/vantekoandassociates/30min" 
             target="_blank" 
             rel="noopener noreferrer"
-            class="px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wide uppercase transition-all duration-300 shadow-xl shadow-gold/20 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0"
+            class="px-6 py-3.5 rounded bg-[#C6A66B] hover:bg-[#b89758] text-[#111C2E] font-semibold text-sm text-center tracking-wide transition flex items-center justify-center gap-2.5"
           >
-            <i data-lucide="calendar-check-2" class="w-5 h-5 text-navy"></i>
-            <span>Book a Consultation via Calendly</span>
+            <i data-lucide="calendar" class="w-4 h-4 text-[#111C2E]"></i>
+            <span>Schedule 30-Min Consultation</span>
           </a>
 
-          <!-- Email / WhatsApp Direct -->
           <a 
             href="mailto:davidvanteko@gmail.com" 
-            class="px-6 py-4 rounded-xl border border-navy-light bg-navy-card hover:bg-navy-light text-ivory hover:text-white font-semibold text-sm transition flex items-center justify-center gap-2.5"
+            class="px-5 py-3.5 rounded border border-[#23344e] hover:border-[#C6A66B] text-[#F6F2E9] hover:text-white font-medium text-sm text-center transition flex items-center justify-center gap-2"
           >
-            <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
-            <span>Send Direct Email</span>
+            <i data-lucide="mail" class="w-4 h-4 text-[#C6A66B]"></i>
+            <span>davidvanteko@gmail.com</span>
           </a>
-
-        </div>
-
-        <!-- Trust / Highlight Badges -->
-        <div class="pt-6 border-t border-navy-light/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center sm:text-left">
-          <div>
-            <div class="font-serif text-xl sm:text-2xl font-bold text-gold">Corporate</div>
-            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Legal Structuring</div>
-          </div>
-          <div>
-            <div class="font-serif text-xl sm:text-2xl font-bold text-white">100%</div>
-            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Statutory Compliance</div>
-          </div>
-          <div>
-            <div class="font-serif text-xl sm:text-2xl font-bold text-gold">Strategic</div>
-            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Digital Roadmaps</div>
-          </div>
-          <div>
-            <div class="font-serif text-xl sm:text-2xl font-bold text-white">Global</div>
-            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Virtual Leadership</div>
-          </div>
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-    <!-- WHAT I DO / CORE EXPERTISE PILLARS -->
-    <section class="mt-20 sm:mt-28 pt-12 border-t border-navy-light">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-2">Multi-Disciplinary Expertise</span>
-        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-          How I Support Leaders &amp; Growing Enterprises
+    <!-- CALENDLY EMBEDDED SCHEDULER SECTION -->
+    <section class="mt-16 pt-12 border-t border-[#23344e]">
+      <div class="max-w-2xl mb-6">
+        <h2 class="font-serif text-2xl font-bold text-white">
+          Book a Time Directly
         </h2>
+        <p class="text-sm text-[#c8c2b5] mt-1">
+          Select a convenient date and time on the calendar below, or open directly on 
+          <a href="https://calendly.com/vantekoandassociates/30min" target="_blank" rel="noopener noreferrer" class="text-[#C6A66B] underline hover:text-[#b89758]">
+            Calendly
+          </a>.
+        </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Pillar 1: Attorney -->
-        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
-              <i data-lucide="scale" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-2">Attorney &amp; Legal Counsel</h3>
-            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
-              Commercial contracts, business entity formation, risk mitigation, and strategic corporate legal guidance.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
-            Contracts &bull; Governance &bull; Advisory
-          </div>
-        </div>
-
-        <!-- Pillar 2: Compliance Official -->
-        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
-              <i data-lucide="shield-alert" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-2">Compliance Official</h3>
-            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
-              Statutory filings, regulatory compliance audits, internal corporate policies, AML/CFT standards, and ethical governance.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
-            Risk &bull; Regulatory &bull; Policies
-          </div>
-        </div>
-
-        <!-- Pillar 3: Digital Strategist -->
-        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
-              <i data-lucide="line-chart" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-2">Digital Strategist</h3>
-            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
-              Designing scalable digital workflows, business systems architecture, online footprint, and customer conversion paths.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
-            Systems &bull; Growth &bull; Optimization
-          </div>
-        </div>
-
-        <!-- Pillar 4: Global Virtual Manager -->
-        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
-              <i data-lucide="globe" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-2">Global Virtual Manager</h3>
-            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
-              Orchestrating cross-border remote teams, asynchronous operations, executive assistance, and cross-timezone execution.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
-            Remote Ops &bull; Team Scaling &bull; Efficiency
-          </div>
-        </div>
-
+      <!-- Inline Calendly Embed -->
+      <div class="rounded-lg overflow-hidden border border-[#23344e] bg-[#111C2E]">
+        <div 
+          class="calendly-inline-widget" 
+          data-url="https://calendly.com/vantekoandassociates/30min?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=111c2e&text_color=f6f2e9&primary_color=c6a66b" 
+          style="min-width:320px;height:700px;"
+        ></div>
       </div>
     </section>
-
-    <!-- CALENDLY SCHEDULING / ACTION SECTION -->
-    <section id="book" class="mt-20 sm:mt-28 scroll-mt-24">
-      <div class="rounded-3xl bg-navy-card border-2 border-gold/40 p-6 sm:p-10 lg:p-12 text-center relative overflow-hidden shadow-2xl">
-        
-        <!-- Subtle Background Glow -->
-        <div class="absolute -top-24 -left-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-3xl mx-auto space-y-6">
-          <div class="w-16 h-16 rounded-2xl bg-gold/15 border border-gold/50 text-gold mx-auto flex items-center justify-center shadow-lg">
-            <i data-lucide="calendar" class="w-8 h-8"></i>
-          </div>
-
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
-            Click the Link &bull; <span class="text-gold">Let’s Discuss</span>
-          </h2>
-
-          <p class="text-base text-ivory-muted leading-relaxed max-w-xl mx-auto">
-            Ready to explore an engagement, resolve a compliance question, or streamline your operations? Pick a time directly on my calendar below.
-          </p>
-
-          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-            
-            <!-- Direct Calendly Link Button -->
-            <a 
-              id="calendly-direct-link"
-              href="https://calendly.com/vantekoandassociates/30min" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-gold/25 flex items-center justify-center gap-3 transform hover:scale-105"
-            >
-              <i data-lucide="calendar-check" class="w-5 h-5 text-navy"></i>
-              <span>Book 30-Min Consultation</span>
-            </a>
-
-            <!-- Direct Email button -->
-            <a 
-              href="mailto:davidvanteko@gmail.com" 
-              class="w-full sm:w-auto px-7 py-4 rounded-xl border border-gold/40 bg-navy hover:bg-navy-light text-ivory font-semibold text-sm transition flex items-center justify-center gap-2"
-            >
-              <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
-              <span>davidvanteko@gmail.com</span>
-            </a>
-
-          </div>
-
-          <!-- Direct Link Text for Clarity -->
-          <div class="pt-2 text-xs text-ivory-muted">
-            Direct Calendar Link: 
-            <a href="https://calendly.com/vantekoandassociates/30min" target="_blank" rel="noopener noreferrer" class="text-gold font-semibold underline underline-offset-4 hover:text-gold-light ml-1">
-              calendly.com/vantekoandassociates/30min
-            </a>
-          </div>
-
-          <!-- Calendly Inline Widget -->
-          <div class="pt-6">
-            <div 
-              class="calendly-inline-widget rounded-2xl overflow-hidden border border-navy-light shadow-inner bg-navy-deep" 
-              data-url="https://calendly.com/vantekoandassociates/30min?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=111c2e&text_color=f6f2e9&primary_color=c6a66b" 
-              style="min-width:320px;height:720px;"
-            ></div>
-          </div>
-
-          <!-- Confidentiality Note -->
-          <p class="text-xs text-ivory-muted/70 pt-2">
-            🔒 All strategic conversations are treated with utmost professional confidentiality and discretion.
-          </p>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- DIRECT CONTACT STRIP -->
-    <div class="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-ivory-muted">
-      <a href="mailto:davidvanteko@gmail.com" class="flex items-center gap-2 hover:text-gold transition">
-        <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
-        <span>davidvanteko@gmail.com</span>
-      </a>
-      <span class="hidden sm:inline text-navy-light">&bull;</span>
-      <div class="flex items-center gap-2">
-        <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i>
-        <span>Global Remote Advisory</span>
-      </div>
-      <span class="hidden sm:inline text-navy-light">&bull;</span>
-      <div class="flex items-center gap-2">
-        <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
-        <span>Strict Confidentiality Assured</span>
-      </div>
-    </div>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="mt-20 border-t border-navy-light bg-navy-deep py-8 text-center text-xs text-ivory-muted">
-    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+  <footer class="border-t border-[#23344e] py-8 text-center text-xs text-[#c8c2b5]">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
       <div>
-        &copy; 2026 <strong class="text-white">David Vanteko</strong> &bull; Vanteko &amp; Associates.
+        &copy; 2026 David Vanteko &bull; Vanteko &amp; Associates.
       </div>
-      <div class="text-[11px] text-ivory-muted/80">
+      <div>
         Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script>
-    // Initialize Lucide Icons
     if (window.lucide) {
       window.lucide.createIcons();
     }
