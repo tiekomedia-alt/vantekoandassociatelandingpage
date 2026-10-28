@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanteko &amp; Associates | Barristers, Solicitors &amp; Commercial Legal Consultants</title>
-  <meta name="description" content="Vanteko & Associates is a premier corporate commercial law firm providing strategic legal counsel, dispute resolution, M&A, regulatory compliance, and cross-border advisory.">
-  <meta name="keywords" content="Vanteko and Associates, corporate law, legal practitioners, commercial dispute resolution, solicitors, M&A lawyers, banking finance legal advisory">
+  <title>David Vanteko | Attorney, Compliance Official, Digital Strategist &amp; Global Virtual Manager</title>
+  <meta name="description" content="Hi, my name is David Vanteko — an Attorney, Compliance Official, Digital Strategist, and Global Virtual Manager. Book a consultation today.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Vanteko & Associates | Barristers, Solicitors & Commercial Legal Consultants">
-  <meta property="og:description" content="Strategic legal counsel, commercial litigation, corporate governance, and transaction advisory for leading enterprises.">
+  <meta property="og:title" content="David Vanteko | Legal, Compliance &amp; Digital Strategy">
+  <meta property="og:description" content="Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager. Let's discuss your next breakthrough.">
+  <meta property="og:image" content="assets/images/david-vanteko.jpg">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN with configuration -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            brand: {
-              dark: '#070d19',
-              navy: '#0e192d',
-              card: '#132038',
-              cardLight: '#182947',
-              gold: '#c5a059',
-              goldLight: '#dfba73',
-              goldDark: '#a37e38',
-              cream: '#faf7f2',
-              slate: '#8b9bb4'
+            navy: {
+              DEFAULT: '#111C2E',
+              light: '#18263e',
+              deep: '#0b1320',
+              card: '#152238'
+            },
+            gold: {
+              DEFAULT: '#C6A66B',
+              light: '#d8ba7c',
+              dark: '#af8c4f'
+            },
+            ivory: {
+              DEFAULT: '#F6F2E9',
+              muted: '#dfdacd'
             }
           },
           fontFamily: {
@@ -49,1631 +52,345 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Styles -->
+  <!-- Calendly Widget CSS & JS (for seamless popup scheduling) -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#070d19] text-slate-200 antialiased selection:bg-amber-600 selection:text-white">
+<body class="bg-navy text-ivory antialiased selection:bg-gold selection:text-navy">
 
-  <!-- TOP ANNOUNCEMENT & CONTACT BAR -->
-  <div class="bg-[#040810] border-b border-slate-800/80 text-xs py-2.5 px-4 hidden md:block">
-    <div class="max-w-7xl mx-auto flex justify-between items-center text-slate-400">
-      <div class="flex items-center space-x-6">
-        <span class="flex items-center text-slate-300">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500 mr-1.5"></i>
-          Victoria Island, Lagos &bull; Central Business District, Abuja
-        </span>
-        <span class="flex items-center text-slate-300">
-          <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-500 mr-1.5"></i>
-          Mon - Fri: 8:00 AM – 6:00 PM (WAT)
-        </span>
-      </div>
-      <div class="flex items-center space-x-6">
-        <a href="tel:+23412345678" class="flex items-center hover:text-amber-400 transition-colors">
-          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-500 mr-1.5"></i>
-          +234 (0) 1 888 4590
-        </a>
-        <a href="mailto:counsel@vantekoassociates.com" class="flex items-center hover:text-amber-400 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-500 mr-1.5"></i>
-          counsel@vantekoassociates.com
-        </a>
-        <span class="text-amber-500/80 font-medium tracking-wide">
-          Private Client &amp; Corporate Retainers
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <!-- MAIN HEADER / NAVBAR -->
-  <header id="main-navbar" class="fixed top-0 md:top-[37px] left-0 right-0 z-40 transition-all duration-300 bg-transparent py-5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
-        
-        <!-- BRAND LOGO -->
-        <a href="#" class="flex items-center space-x-3.5 group">
-          <div class="w-11 h-11 rounded-lg gold-gradient-bg p-0.5 shadow-lg shadow-amber-900/30 group-hover:scale-105 transition-transform">
-            <div class="w-full h-full bg-[#070d19] rounded-[6px] flex items-center justify-center">
-              <span class="font-serif font-bold text-lg gold-gradient-text">V&amp;A</span>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-amber-200 transition-colors">
-              VANTEKO <span class="text-amber-400 font-light">&amp;</span> ASSOCIATES
-            </span>
-            <span class="text-[10px] sm:text-[11px] tracking-[0.22em] text-slate-400 uppercase font-semibold">
-              Barristers &bull; Solicitors &bull; Legal Consultants
-            </span>
-          </div>
-        </a>
-
-        <!-- DESKTOP NAV -->
-        <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
-          <a href="#about" class="nav-link text-slate-300 hover:text-amber-400">About Firm</a>
-          <a href="#practice-areas" class="nav-link text-slate-300 hover:text-amber-400">Practice Areas</a>
-          <a href="#why-us" class="nav-link text-slate-300 hover:text-amber-400">Why Us</a>
-          <a href="#track-record" class="nav-link text-slate-300 hover:text-amber-400">Track Record</a>
-          <a href="#attorneys" class="nav-link text-slate-300 hover:text-amber-400">Partners &amp; Team</a>
-          <a href="#insights" class="nav-link text-slate-300 hover:text-amber-400">Legal Insights</a>
-          <a href="#contact" class="nav-link text-slate-300 hover:text-amber-400">Contact</a>
-        </nav>
-
-        <!-- CTA & ACTIONS -->
-        <div class="hidden sm:flex items-center space-x-4">
-          <button data-open-modal="consultation" class="relative group overflow-hidden rounded-md p-px font-semibold text-xs tracking-wider uppercase transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20 active:scale-95">
-            <span class="absolute inset-0 gold-gradient-bg"></span>
-            <span class="relative block px-5 py-2.5 rounded-[5px] bg-[#070d19] text-amber-300 group-hover:bg-opacity-0 group-hover:text-slate-950 font-bold transition-all duration-300 flex items-center gap-2">
-              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-              Book Consultation
-            </span>
-          </button>
+  <!-- NAVBAR -->
+  <header class="w-full border-b border-navy-light/80 bg-navy/90 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+      
+      <!-- Logo / Monogram -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gold/15 border border-gold/40 flex items-center justify-center text-gold font-serif font-bold text-lg group-hover:bg-gold group-hover:text-navy transition-all duration-300">
+          DV
         </div>
-
-        <!-- MOBILE HAMBURGER -->
-        <div class="lg:hidden flex items-center">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle Navigation">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-          </button>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg sm:text-xl text-white tracking-tight leading-tight">
+            David Vanteko
+          </span>
+          <span class="text-[10px] sm:text-xs text-gold tracking-wider uppercase font-medium">
+            Legal &bull; Compliance &bull; Operations
+          </span>
         </div>
+      </a>
 
+      <!-- Quick Action Buttons -->
+      <div class="flex items-center space-x-4">
+        <a href="#book" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold text-ivory hover:text-gold transition">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-gold"></i>
+          <span>Check Availability</span>
+        </a>
+
+        <a href="#book" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg bg-gold text-navy font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg shadow-gold/10 flex items-center gap-2">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>Book Consultation</span>
+        </a>
       </div>
+
     </div>
   </header>
 
-  <!-- MOBILE NAVIGATION DRAWER -->
-  <div id="mobile-backdrop" class="fixed inset-0 bg-black/80 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm"></div>
-  <div id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#0a1222] border-l border-slate-800 z-50 transform translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-slate-800">
-        <div class="flex items-center space-x-3">
-          <div class="w-9 h-9 rounded gold-gradient-bg p-0.5">
-            <div class="w-full h-full bg-[#070d19] rounded flex items-center justify-center">
-              <span class="font-serif font-bold text-sm text-amber-400">V&amp;A</span>
-            </div>
-          </div>
-          <span class="font-serif font-bold text-lg text-white">VANTEKO &amp; ASSOC.</span>
-        </div>
-        <button id="close-mobile-menu-btn" class="text-slate-400 hover:text-white p-2">
-          <i data-lucide="x" class="w-6 h-6"></i>
-        </button>
-      </div>
-
-      <nav class="flex flex-col space-y-4 mt-8 text-base font-medium">
-        <a href="#about" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">About Firm</a>
-        <a href="#practice-areas" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Practice Areas</a>
-        <a href="#why-us" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Why Choose Us</a>
-        <a href="#track-record" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Track Record</a>
-        <a href="#attorneys" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Our Legal Team</a>
-        <a href="#insights" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Insights &amp; Publications</a>
-        <a href="#faq" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1 border-b border-slate-800/40">Client FAQs</a>
-        <a href="#contact" class="mobile-nav-link text-slate-300 hover:text-amber-400 py-1">Contact Details</a>
-      </nav>
-    </div>
-
-    <div class="pt-6 border-t border-slate-800 space-y-4">
-      <button data-open-modal="consultation" class="w-full py-3 px-4 rounded-lg gold-gradient-bg text-slate-950 font-bold text-sm text-center uppercase tracking-wider shadow-lg shadow-amber-900/30">
-        Book Private Consultation
-      </button>
-      <div class="text-xs text-slate-400 text-center">
-        Call: <a href="tel:+23412345678" class="text-amber-400 font-medium">+234 (0) 1 888 4590</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- HERO SECTION -->
-  <section class="relative min-h-[92vh] flex items-center pt-32 pb-20 overflow-hidden">
-    <!-- Background Image with Moody Overlay -->
-    <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Corporate Architecture & Legal Headquarters" class="w-full h-full object-cover object-center filter brightness-50 contrast-125">
-      <div class="absolute inset-0 hero-overlay"></div>
-      <div class="absolute inset-0 bg-radial-gradient from-transparent via-black/40 to-[#070d19]"></div>
-    </div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-8 space-y-8">
+  <!-- MAIN HERO SECTION -->
+  <main class="max-w-6xl mx-auto px-5 sm:px-8 py-12 sm:py-20 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <!-- PHOTO COLUMN -->
+      <div class="lg:col-span-5 flex justify-center order-1 lg:order-2">
+        <div class="relative w-full max-w-sm sm:max-w-md">
           
-          <!-- Pill Badge -->
-          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            <span class="text-xs font-semibold tracking-wider text-amber-300 uppercase">
-              Tier-1 Corporate, Commercial &amp; Dispute Practice
-            </span>
+          <!-- Outer Decorative Glow -->
+          <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-gold/30 via-transparent to-gold/20 blur-xl opacity-60"></div>
+
+          <!-- Main Portrait Container -->
+          <div class="relative rounded-3xl overflow-hidden border-2 border-gold/40 shadow-2xl bg-navy-card">
+            <img 
+              src="assets/images/david-vanteko.jpg" 
+              alt="David Vanteko - Attorney, Compliance Official, Digital Strategist & Global Virtual Manager" 
+              class="w-full h-[420px] sm:h-[480px] object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+            >
+            
+            <!-- Bottom Card Overlay -->
+            <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-navy-deep via-navy/90 to-transparent">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gold uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Available for Consultations &amp; Advisory</span>
+              </div>
+              <h2 class="font-serif text-xl font-bold text-white mt-1">David Vanteko</h2>
+              <p class="text-xs text-ivory-muted mt-0.5">Vanteko &amp; Associates</p>
+            </div>
           </div>
 
-          <!-- Main Headline -->
-          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.12]">
-            Strategic Counsel. <br>
-            <span class="gold-gradient-text italic font-normal">Uncompromising</span> Advocacy. <br>
-            Proven Enterprise Results.
-          </h1>
+          <!-- Corner Accent Badge -->
+          <div class="absolute -top-4 -right-4 bg-navy-deep border border-gold/40 rounded-xl p-3 shadow-xl hidden sm:flex items-center space-x-2">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold"></i>
+            <div class="text-[11px] leading-tight font-medium text-ivory">
+              <span class="font-bold text-white block">Advisory &bull; Strategy</span>
+              Global Operations
+            </div>
+          </div>
 
-          <!-- Subtext -->
-          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light leading-relaxed">
-            At <strong class="text-white font-medium">Vanteko &amp; Associates</strong>, we safeguard corporate capital, structure cross-border transactions, and resolve high-stakes disputes with deep statutory mastery and commercial clarity.
+        </div>
+      </div>
+
+      <!-- TEXT / NARRATIVE COLUMN -->
+      <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+        
+        <!-- Salutation Badge -->
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-gold/30 bg-gold/10 text-gold text-xs font-semibold tracking-wider uppercase">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Welcome &bull; Direct Executive Access</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+          Hi, my name is <br class="hidden sm:block">
+          <span class="text-gold">David Vanteko</span>.
+        </h1>
+
+        <!-- Professional Titles Bar -->
+        <div class="flex flex-wrap items-center gap-2 text-sm sm:text-base font-semibold text-ivory">
+          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Attorney</span>
+          <span class="text-gold">&bull;</span>
+          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Compliance Official</span>
+          <span class="text-gold">&bull;</span>
+          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Digital Strategist</span>
+          <span class="text-gold">&bull;</span>
+          <span class="px-3 py-1 rounded-md bg-navy-card border border-navy-light text-white">Global Virtual Manager</span>
+        </div>
+
+        <!-- Personal Introduction & Pitch -->
+        <p class="text-base sm:text-lg text-ivory-muted leading-relaxed font-light">
+          I bridge legal precision with modern digital operational excellence. Whether you need watertight corporate compliance, strategic legal counsel, cutting-edge digital execution, or seamless global virtual operations — <strong class="text-white font-medium">let’s discuss your objectives.</strong>
+        </p>
+
+        <!-- PRIMARY CALL TO ACTION BUTTONS -->
+        <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          
+          <!-- Calendly Booking Button -->
+          <a 
+            id="book-consultation-btn"
+            href="https://calendly.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wide uppercase transition-all duration-300 shadow-xl shadow-gold/20 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            <i data-lucide="calendar-check-2" class="w-5 h-5 text-navy"></i>
+            <span>Book a Consultation via Calendly</span>
+          </a>
+
+          <!-- Email / WhatsApp Direct -->
+          <a 
+            href="mailto:davidvanteko@gmail.com" 
+            class="px-6 py-4 rounded-xl border border-navy-light bg-navy-card hover:bg-navy-light text-ivory hover:text-white font-semibold text-sm transition flex items-center justify-center gap-2.5"
+          >
+            <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+            <span>Send Direct Email</span>
+          </a>
+
+        </div>
+
+        <!-- Trust / Highlight Badges -->
+        <div class="pt-6 border-t border-navy-light/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center sm:text-left">
+          <div>
+            <div class="font-serif text-xl sm:text-2xl font-bold text-gold">Corporate</div>
+            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Legal Structuring</div>
+          </div>
+          <div>
+            <div class="font-serif text-xl sm:text-2xl font-bold text-white">100%</div>
+            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Statutory Compliance</div>
+          </div>
+          <div>
+            <div class="font-serif text-xl sm:text-2xl font-bold text-gold">Strategic</div>
+            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Digital Roadmaps</div>
+          </div>
+          <div>
+            <div class="font-serif text-xl sm:text-2xl font-bold text-white">Global</div>
+            <div class="text-[11px] text-ivory-muted uppercase tracking-wider mt-0.5">Virtual Leadership</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- WHAT I DO / CORE EXPERTISE PILLARS -->
+    <section class="mt-20 sm:mt-28 pt-12 border-t border-navy-light">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-2">Multi-Disciplinary Expertise</span>
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+          How I Support Leaders &amp; Growing Enterprises
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1: Attorney -->
+        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="scale" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Attorney &amp; Legal Counsel</h3>
+            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
+              Commercial contracts, business entity formation, risk mitigation, and strategic corporate legal guidance.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
+            Contracts &bull; Governance &bull; Advisory
+          </div>
+        </div>
+
+        <!-- Pillar 2: Compliance Official -->
+        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Compliance Official</h3>
+            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
+              Statutory filings, regulatory compliance audits, internal corporate policies, AML/CFT standards, and ethical governance.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
+            Risk &bull; Regulatory &bull; Policies
+          </div>
+        </div>
+
+        <!-- Pillar 3: Digital Strategist -->
+        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="line-chart" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Digital Strategist</h3>
+            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
+              Designing scalable digital workflows, business systems architecture, online footprint, and customer conversion paths.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
+            Systems &bull; Growth &bull; Optimization
+          </div>
+        </div>
+
+        <!-- Pillar 4: Global Virtual Manager -->
+        <div class="card-hover p-6 rounded-2xl bg-navy-card border border-navy-light flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Global Virtual Manager</h3>
+            <p class="text-xs sm:text-sm text-ivory-muted leading-relaxed">
+              Orchestrating cross-border remote teams, asynchronous operations, executive assistance, and cross-timezone execution.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-navy-light text-[11px] text-gold font-medium">
+            Remote Ops &bull; Team Scaling &bull; Efficiency
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALENDLY SCHEDULING / ACTION SECTION -->
+    <section id="book" class="mt-20 sm:mt-28 scroll-mt-24">
+      <div class="rounded-3xl bg-navy-card border-2 border-gold/40 p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden shadow-2xl">
+        
+        <!-- Subtle Background Glow -->
+        <div class="absolute -top-24 -left-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-gold/15 border border-gold/50 text-gold mx-auto flex items-center justify-center shadow-lg">
+            <i data-lucide="calendar" class="w-8 h-8"></i>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            Click the Link &bull; <span class="text-gold">Let’s Discuss</span>
+          </h2>
+
+          <p class="text-base text-ivory-muted leading-relaxed">
+            Ready to explore an engagement, resolve a compliance question, or streamline your operations? Pick a time directly on my calendar below.
           </p>
 
-          <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5 pt-2">
-            <button data-open-modal="consultation" class="px-8 py-4 rounded-lg gold-gradient-bg text-slate-950 font-bold text-sm tracking-wide uppercase transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/25 hover:-translate-y-0.5 flex items-center justify-center gap-3">
-              <i data-lucide="scale" class="w-4 h-4"></i>
-              Schedule Consultation
-            </button>
-            <a href="#practice-areas" class="px-7 py-4 rounded-lg border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-sm">
-              Explore Practice Areas
-              <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400"></i>
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            
+            <!-- Direct Calendly Link Button -->
+            <a 
+              id="calendly-direct-link"
+              href="https://calendly.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-gold/25 flex items-center justify-center gap-3 transform hover:scale-105"
+            >
+              <i data-lucide="calendar" class="w-5 h-5 text-navy"></i>
+              <span>Open Calendly Schedule</span>
             </a>
+
+            <!-- WhatsApp or Email button -->
+            <a 
+              href="mailto:davidvanteko@gmail.com" 
+              class="w-full sm:w-auto px-7 py-4 rounded-xl border border-gold/40 bg-navy hover:bg-navy-light text-ivory font-semibold text-sm transition flex items-center justify-center gap-2"
+            >
+              <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+              <span>davidvanteko@gmail.com</span>
+            </a>
+
           </div>
 
-          <!-- Trust Badges Bar -->
-          <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
-            <div>
-              <div class="text-2xl sm:text-3xl font-serif font-bold text-amber-400">$1.2B+</div>
-              <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Transaction Value Advised</div>
-            </div>
-            <div>
-              <div class="text-2xl sm:text-3xl font-serif font-bold text-white">98.5%</div>
-              <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Commercial Dispute Success</div>
-            </div>
-            <div>
-              <div class="text-2xl sm:text-3xl font-serif font-bold text-amber-400">25+ Yrs</div>
-              <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Partner Collective Depth</div>
-            </div>
-            <div>
-              <div class="text-2xl sm:text-3xl font-serif font-bold text-white">500+</div>
-              <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Corporate &amp; Institutional Clients</div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- HERO QUICK CASE EVALUATION CARD -->
-        <div class="lg:col-span-4 hidden lg:block">
-          <div class="glass-panel rounded-2xl p-7 shadow-2xl relative border border-amber-500/20">
-            <div class="absolute -top-3.5 right-6 px-3 py-1 bg-amber-500 text-slate-950 font-bold text-[11px] rounded uppercase tracking-wider">
-              Priority Engagement
-            </div>
-            
-            <div class="flex items-center space-x-3 mb-5">
-              <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400">
-                <i data-lucide="shield-check" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <h3 class="text-white font-serif text-lg font-bold">Confidential Case Review</h3>
-                <p class="text-xs text-slate-400">Direct response from a senior partner</p>
-              </div>
-            </div>
-
-            <form data-form="consultation" class="space-y-4">
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Full Legal Name</label>
-                <input type="text" required placeholder="e.g. Chief Adeleke Johnson" class="w-full px-3.5 py-2.5 bg-slate-900/90 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Corporate Email</label>
-                <input type="email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 bg-slate-900/90 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Practice Area of Concern</label>
-                <select class="w-full px-3.5 py-2.5 bg-slate-900/90 border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                  <option value="corporate">Corporate &amp; Commercial Advisory</option>
-                  <option value="dispute">Litigation &amp; Commercial Arbitration</option>
-                  <option value="banking">Banking, Securities &amp; FinTech</option>
-                  <option value="realestate">Real Estate &amp; Infrastructure</option>
-                  <option value="ip">Intellectual Property &amp; Tech Law</option>
-                  <option value="energy">Energy, Mining &amp; Natural Resources</option>
-                </select>
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Brief Overview (Strictly Confidential)</label>
-                <textarea rows="2" placeholder="Describe the transaction or legal challenge..." class="w-full px-3.5 py-2.5 bg-slate-900/90 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition"></textarea>
-              </div>
-
-              <button type="submit" class="w-full py-3 rounded-lg gold-gradient-bg text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 transition-opacity shadow-lg shadow-amber-900/20">
-                Submit For Case Evaluation
-              </button>
-            </form>
-
-            <p class="text-[11px] text-slate-400 text-center mt-3 flex items-center justify-center gap-1.5">
-              <i data-lucide="lock" class="w-3 h-3 text-amber-400"></i>
-              Protected by Attorney-Client Privilege
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- REPUTATION STRIP / CLIENT DOMAINS -->
-  <section class="border-y border-slate-800 bg-[#09101d] py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-xs uppercase tracking-[0.25em] text-slate-400 mb-6 font-semibold">
-        Trusted Counsel to Market Leaders Across Critical Sectors
-      </p>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center text-center text-slate-400">
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="landmark" class="w-4 h-4 text-amber-500"></i>
-          <span>COMMERCIAL BANKS</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="cpu" class="w-4 h-4 text-amber-500"></i>
-          <span>FINTECH &amp; SAAS</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="flame" class="w-4 h-4 text-amber-500"></i>
-          <span>ENERGY &amp; POWER</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="building-2" class="w-4 h-4 text-amber-500"></i>
-          <span>INFRASTRUCTURE</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="ship" class="w-4 h-4 text-amber-500"></i>
-          <span>MARITIME &amp; TRADE</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-sm tracking-wider text-slate-300 hover:text-amber-400 transition">
-          <i data-lucide="briefcase" class="w-4 h-4 text-amber-500"></i>
-          <span>PRIVATE EQUITY</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT THE FIRM SECTION -->
-  <section id="about" class="py-24 bg-[#070d19] relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid lg:grid-cols-12 gap-14 items-center">
-        
-        <!-- Left Image Composition -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" alt="Vanteko and Associates Legal Counsel" class="w-full h-[520px] object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#070d19] via-transparent to-transparent"></div>
-            
-            <div class="absolute bottom-6 left-6 right-6 p-5 glass-panel rounded-xl border border-amber-500/30">
-              <p class="font-serif italic text-amber-200 text-sm leading-snug">
-                "We do not merely interpret statutory frameworks; we architect strategic business pathways that unlock investment capital and neutralize institutional risk."
-              </p>
-              <div class="mt-3 flex items-center justify-between">
-                <div>
-                  <h4 class="text-xs font-bold text-white tracking-wider uppercase">Senior Management Board</h4>
-                  <span class="text-[11px] text-amber-400">Vanteko &amp; Associates</span>
-                </div>
-                <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
-                  <i data-lucide="award" class="w-4 h-4"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Badge Overlay -->
-          <div class="absolute -top-6 -left-6 bg-gradient-to-br from-amber-500 to-amber-700 text-slate-950 p-5 rounded-2xl shadow-xl hidden sm:block">
-            <div class="text-3xl font-serif font-black">25+</div>
-            <div class="text-[11px] font-bold uppercase tracking-wider mt-0.5">Years of Legal<br>Distinction</div>
-          </div>
-        </div>
-
-        <!-- Right Content Narrative -->
-        <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest">
-            <i data-lucide="book-open" class="w-4 h-4"></i>
-            <span>Firm Profile &amp; Core Philosophy</span>
-          </div>
-
-          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-            A Modern Commercial Firm Built for an <span class="gold-gradient-text">Uncertain Regulatory</span> World.
-          </h2>
-
-          <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
-            <strong>Vanteko &amp; Associates</strong> is a premier full-service law firm renowned for delivering bespoke legal solutions to indigenous conglomerates, multinational corporations, financial institutions, and sovereign entities.
+          <!-- Configuration Note for User -->
+          <p class="text-xs text-ivory-muted/70 pt-4">
+            🔒 All strategic conversations are treated with utmost professional confidentiality and discretion.
           </p>
 
-          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
-            With offices strategically positioned in the commercial epicenter of Lagos and the administrative capital of Abuja, our legal practice bridges local regulatory dynamics with international standard execution. Our attorneys are admitted to multiple jurisdictions and bring rigorous academic pedigree combined with commercial acumen.
-          </p>
-
-          <!-- Core Pillars Grid -->
-          <div class="grid sm:grid-cols-2 gap-5 pt-4">
-            
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
-                <i data-lucide="compass" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-white font-semibold text-base mb-1">Strategic Foresight</h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Anticipating regulatory headwinds before policy changes impact your enterprise balance sheet.
-              </p>
-            </div>
-
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
-                <i data-lucide="shield" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-white font-semibold text-base mb-1">Uncompromising Integrity</h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Adhering to the highest codes of professional legal ethics and global anti-bribery standards.
-              </p>
-            </div>
-
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
-                <i data-lucide="zap" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-white font-semibold text-base mb-1">Agile Deal Execution</h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Rapid turnaround times for complex syndications, M&amp;A due diligence, and contract closures.
-              </p>
-            </div>
-
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
-                <i data-lucide="globe" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-white font-semibold text-base mb-1">Cross-Border Reach</h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Direct partnerships with counsel across London, Dubai, Delaware, and African trade corridors.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="pt-4 flex items-center space-x-6">
-            <button data-open-modal="consultation" class="text-amber-400 hover:text-amber-300 font-semibold text-sm flex items-center gap-2 group">
-              <span>Schedule a confidential consultation with our partners</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </button>
-          </div>
-
         </div>
 
       </div>
+    </section>
 
+    <!-- DIRECT CONTACT STRIP -->
+    <div class="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-ivory-muted">
+      <a href="mailto:davidvanteko@gmail.com" class="flex items-center gap-2 hover:text-gold transition">
+        <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+        <span>davidvanteko@gmail.com</span>
+      </a>
+      <span class="hidden sm:inline text-navy-light">&bull;</span>
+      <div class="flex items-center gap-2">
+        <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i>
+        <span>Global Remote Advisory</span>
+      </div>
+      <span class="hidden sm:inline text-navy-light">&bull;</span>
+      <div class="flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
+        <span>Strict Confidentiality Assured</span>
+      </div>
     </div>
-  </section>
 
-  <!-- PRACTICE AREAS SECTION -->
-  <section id="practice-areas" class="py-24 bg-[#0a1222] border-t border-slate-800 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-          <i data-lucide="briefcase" class="w-4 h-4"></i>
-          <span>Areas of Legal Specialization</span>
-        </div>
-        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          Comprehensive Legal Solutions for <span class="gold-gradient-text">Modern Enterprise</span>
-        </h2>
-        <p class="text-slate-400 text-base leading-relaxed">
-          Our specialized practice groups provide deep sector knowledge, combining commercial litigation resilience with sophisticated transactional advisory.
-        </p>
-
-        <!-- Category Filters -->
-        <div class="flex flex-wrap justify-center gap-2.5 mt-8">
-          <button data-filter="all" class="practice-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-600 text-white border border-amber-600 transition">
-            All Practices
-          </button>
-          <button data-filter="corporate" class="practice-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">
-            Corporate &amp; M&amp;A
-          </button>
-          <button data-filter="dispute" class="practice-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">
-            Litigation &amp; ADR
-          </button>
-          <button data-filter="banking" class="practice-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">
-            Banking &amp; FinTech
-          </button>
-          <button data-filter="realestate" class="practice-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">
-            Real Estate &amp; Energy
-          </button>
-        </div>
-      </div>
-
-      <!-- Practice Cards Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Practice 1 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="corporate">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="building" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">Corporate &amp; Commercial Law</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Advising on cross-border mergers &amp; acquisitions, joint ventures, shareholder agreements, corporate restructurings, and regulatory compliance before the CAC and SEC.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Mergers, Acquisitions &amp; Takeovers
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Corporate Governance &amp; Board Advisory
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Foreign Direct Investment (NIPC, NOTAP)
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Commercial Contracts &amp; Franchising
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on Corporate</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-        <!-- Practice 2 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="dispute">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="scale" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">Litigation &amp; Arbitration</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Tenacious representation in the High Courts, Court of Appeal, Supreme Court, and domestic and international arbitration tribunals (LCIA, ICC, NICArb).
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Commercial Contract Disputes
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Shareholder &amp; Partnership Litigations
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                International Commercial Arbitration
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Asset Tracing, Mareva Injunctions &amp; Recovery
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on Disputes</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-        <!-- Practice 3 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="banking">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="landmark" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">Banking, Finance &amp; FinTech</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Navigating central bank licensing, digital lending compliance, syndicated loan documentation, structured trade finance, and debt capital markets.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                FinTech Licensing (PSB, PSP, Switching)
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Syndicated Lending &amp; Security Perfection
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Securities &amp; Exchange Commission Filings
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                AML/CFT Regulatory Compliance Audits
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on Banking</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-        <!-- Practice 4 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="realestate">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="home" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">Real Estate &amp; Construction</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Providing end-to-end legal support for high-value commercial property acquisitions, title regularisation, zoning permits, and FIDIC construction contracts.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Land Registry Searches &amp; Title Perfection (C of O)
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Commercial Leases &amp; Development Agreements
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Zoning, Planning &amp; Governor's Consent
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                FIDIC &amp; Construction Dispute Resolution
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on Real Estate</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-        <!-- Practice 5 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="realestate">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="flame" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">Energy, Oil &amp; Gas, Power</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Comprehensive regulatory advice under the Petroleum Industry Act (PIA), upstream/midstream licensing, renewable energy projects, and gas sale agreements.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                PIA Compliance &amp; NUPRC / NMDPRA Licensing
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Gas Sale &amp; Aggregation Agreements (GSA)
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Independent Power Producer (IPP) Contracts
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Local Content Advisory (NCDMB Compliance)
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on Energy</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-        <!-- Practice 6 -->
-        <div class="practice-card card-hover-effect rounded-2xl bg-[#0f1b30] border border-slate-800 p-8 flex flex-col justify-between" data-category="corporate">
-          <div>
-            <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-              <i data-lucide="shield-alert" class="w-7 h-7"></i>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white mb-3">IP, Tech &amp; Data Protection</h3>
-            <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Protecting intellectual assets, trademark portfolios, patent registrations, NDPR/GDPR privacy audits, and AI technology licensing agreements.
-            </p>
-            <ul class="space-y-2.5 text-xs text-slate-400 mb-8">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Trademark, Patent &amp; Copyright Registrations
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                NDPR / NDPA Data Privacy Audits &amp; DPCO Filings
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Software Licensing &amp; SaaS Master Service Contracts
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                Brand Infringement Litigation &amp; Cease-and-Desist
-              </li>
-            </ul>
-          </div>
-          <button data-open-modal="consultation" class="w-full py-2.5 px-4 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 text-slate-300 font-semibold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2">
-            <span>Consult on IP &amp; Tech</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE VANTEKO & ASSOCIATES -->
-  <section id="why-us" class="py-24 bg-[#070d19] relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-6 space-y-6">
-          <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest">
-            <i data-lucide="check-circle" class="w-4 h-4"></i>
-            <span>The Vanteko Advantage</span>
-          </div>
-
-          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-            Why Enterprise Leaders Entrust Their <span class="gold-gradient-text">Highest Stakes</span> to Us
-          </h2>
-
-          <p class="text-slate-300 text-base leading-relaxed">
-            In business, legal counsel shouldn't be a roadblock; it should be a strategic accelerant. We merge courtroom resilience with commercial pragmatism to ensure our clients capture market share while eliminating liability.
-          </p>
-
-          <div class="space-y-6 pt-4">
-            
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0 w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center font-bold text-lg shadow-md">
-                1
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-lg">Direct Partner Involvement</h4>
-                <p class="text-sm text-slate-400 mt-1 leading-relaxed">
-                  Every critical matter is actively led by seasoned partners who attend every strategic hearing, negotiation session, and board review.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0 w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center font-bold text-lg shadow-md">
-                2
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-lg">Unmatched Statutory &amp; Regulatory Clout</h4>
-                <p class="text-sm text-slate-400 mt-1 leading-relaxed">
-                  We maintain exceptional working relationships across regulatory commissions, enabling rapid clearances and dispute avoidance.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0 w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center font-bold text-lg shadow-md">
-                3
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-lg">Transparent &amp; Predictable Fee Structures</h4>
-                <p class="text-sm text-slate-400 mt-1 leading-relaxed">
-                  No hidden disbursements or billing ambiguities. We provide capped fee arrangements, value-based retainers, and transparent milestones.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0 w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center font-bold text-lg shadow-md">
-                4
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-lg">24/7 Rapid Response Unit</h4>
-                <p class="text-sm text-slate-400 mt-1 leading-relaxed">
-                  Urgent ex-parte injunctions, regulatory enforcement raids, or weekend transaction deadlines receive instant emergency mobilization.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="lg:col-span-6">
-          <div class="relative">
-            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="Vanteko and Associates Modern Boardroom" class="w-full h-[520px] object-cover">
-              <div class="absolute inset-0 bg-gradient-to-tr from-[#070d19]/90 via-[#070d19]/40 to-transparent"></div>
-            </div>
-
-            <!-- Stats Overlay Card -->
-            <div class="absolute -bottom-8 -right-6 sm:bottom-8 sm:right-8 bg-[#0f1b30]/95 backdrop-blur-md border border-amber-500/40 p-6 rounded-2xl shadow-2xl max-w-xs">
-              <div class="flex items-center space-x-3 mb-2">
-                <i data-lucide="badge-check" class="w-6 h-6 text-amber-400"></i>
-                <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Client Satisfaction</span>
-              </div>
-              <div class="text-3xl font-serif font-black text-white">99.2%</div>
-              <p class="text-xs text-slate-400 mt-1">
-                Client retention rate across multi-year institutional retainer agreements.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- TRACK RECORD / REPRESENTATIVE TRANSACTIONS -->
-  <section id="track-record" class="py-24 bg-[#0a1222] border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-          <i data-lucide="trophy" class="w-4 h-4"></i>
-          <span>Proven Experience &amp; Landmark Wins</span>
-        </div>
-        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          Representative Deals &amp; <span class="gold-gradient-text">Case Precedents</span>
-        </h2>
-        <p class="text-slate-400 text-base">
-          Our track record speaks through the magnitude of transactions completed and the landmark legal disputes resolved in our clients' favor.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Case 1 -->
-        <div class="p-6 rounded-xl bg-[#0e182b] border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Cross-Border M&amp;A</span>
-            <h4 class="font-serif text-xl font-bold text-white mt-2 mb-3">$140M Acquisition</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Advised a leading Pan-African payment gateway on its acquisition by a UK private equity consortium, including complex multi-jurisdiction antitrust filings.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
-            Status: <span class="text-emerald-400">Successfully Closed</span>
-          </div>
-        </div>
-
-        <!-- Case 2 -->
-        <div class="p-6 rounded-xl bg-[#0e182b] border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Commercial Arbitration</span>
-            <h4 class="font-serif text-xl font-bold text-white mt-2 mb-3">$48M Contract Award</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Successfully defended an indigenous energy consortium in an LCIA international arbitration arising from a disputed gas supply off-take agreement.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
-            Status: <span class="text-emerald-400">Full Award Enforced</span>
-          </div>
-        </div>
-
-        <!-- Case 3 -->
-        <div class="p-6 rounded-xl bg-[#0e182b] border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Real Estate &amp; Infra</span>
-            <h4 class="font-serif text-xl font-bold text-white mt-2 mb-3">250-Hectare Title Perfection</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Successfully secured Governor's Consent, environmental clearance, and community development agreements for a multi-billion naira commercial industrial park.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
-            Status: <span class="text-emerald-400">Titles Certified</span>
-          </div>
-        </div>
-
-        <!-- Case 4 -->
-        <div class="p-6 rounded-xl bg-[#0e182b] border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">FinTech &amp; Banking</span>
-            <h4 class="font-serif text-xl font-bold text-white mt-2 mb-3">Tier-1 CBN License</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Structured complete regulatory compliance dossier and corporate entity for a digital bank to secure approval-in-principle (AIP) within record timeframe.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
-            Status: <span class="text-emerald-400">Operational License Granted</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- LEADERSHIP & SENIOR ATTORNEYS -->
-  <section id="attorneys" class="py-24 bg-[#070d19]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-          <i data-lucide="users" class="w-4 h-4"></i>
-          <span>Our Legal Architects</span>
-        </div>
-        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          Partners &amp; <span class="gold-gradient-text">Senior Counsel</span>
-        </h2>
-        <p class="text-slate-400 text-base">
-          Our team comprises seasoned barristers, senior advocates, and commercial transaction specialists recognized by prestigious legal directories.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Attorney 1 -->
-        <div class="rounded-2xl bg-[#0e192d] border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-80 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Barrister Vanteko - Senior Partner" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0e192d] via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-6">
-              <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider border border-amber-500/30">
-                Managing Partner
-              </span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-2xl font-bold text-white">Barr. Vanteko O. SAN, FCIArb</h3>
-              <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Lead Partner &bull; Corporate Commercial &amp; Arbitration</p>
-              <p class="text-xs text-slate-300 mt-4 leading-relaxed">
-                Over 22 years of elite practice advising Fortune 500 multinationals, sovereign wealth funds, and domestic financial institutions on multi-billion dollar transactions and high-profile appellate litigations.
-              </p>
-              <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 space-y-1">
-                <div><strong>Education:</strong> LL.B (Hons), LL.M (London School of Economics)</div>
-                <div><strong>Admissions:</strong> Nigerian Bar Association, Fellow CIArb (UK)</div>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
-              <button data-open-modal="consultation" class="text-xs text-amber-400 hover:text-white font-semibold flex items-center gap-1.5">
-                <span>Book Direct Consultation</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-              <div class="flex space-x-2 text-slate-400">
-                <a href="#" class="hover:text-amber-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                <a href="#" class="hover:text-amber-400"><i data-lucide="mail" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Attorney 2 -->
-        <div class="rounded-2xl bg-[#0e192d] border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-80 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Evelyn Adeleke - Partner" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0e192d] via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-6">
-              <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider border border-amber-500/30">
-                Partner
-              </span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-2xl font-bold text-white">Evelyn K. Adeleke, LL.M</h3>
-              <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Head of Banking, FinTech &amp; Capital Markets</p>
-              <p class="text-xs text-slate-300 mt-4 leading-relaxed">
-                Distinguished authority on financial regulatory compliance, CBN licensing frameworks, venture financing, and complex cross-border payments governance.
-              </p>
-              <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 space-y-1">
-                <div><strong>Education:</strong> LL.B (Unilag), LL.M Corporate Finance (Harvard)</div>
-                <div><strong>Admissions:</strong> Nigerian Bar, New York State Bar</div>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
-              <button data-open-modal="consultation" class="text-xs text-amber-400 hover:text-white font-semibold flex items-center gap-1.5">
-                <span>Book Direct Consultation</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-              <div class="flex space-x-2 text-slate-400">
-                <a href="#" class="hover:text-amber-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                <a href="#" class="hover:text-amber-400"><i data-lucide="mail" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Attorney 3 -->
-        <div class="rounded-2xl bg-[#0e192d] border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-80 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Chukwudi Nwosu - Partner" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0e192d] via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-6">
-              <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider border border-amber-500/30">
-                Partner
-              </span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-2xl font-bold text-white">Chukwudi M. Nwosu, ACTI</h3>
-              <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Lead &bull; Commercial Litigation &amp; Real Estate</p>
-              <p class="text-xs text-slate-300 mt-4 leading-relaxed">
-                Formidable courtroom advocate with extensive experience in commercial injunctions, asset recovery, title disputes, and energy infrastructure agreements.
-              </p>
-              <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 space-y-1">
-                <div><strong>Education:</strong> LL.B (OAU), BL (Nigerian Law School)</div>
-                <div><strong>Admissions:</strong> NBA, Chartered Institute of Taxation (CITN)</div>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
-              <button data-open-modal="consultation" class="text-xs text-amber-400 hover:text-white font-semibold flex items-center gap-1.5">
-                <span>Book Direct Consultation</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-              <div class="flex space-x-2 text-slate-400">
-                <a href="#" class="hover:text-amber-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                <a href="#" class="hover:text-amber-400"><i data-lucide="mail" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS & CLIENT ENDORSEMENTS -->
-  <section class="py-24 bg-[#0a1222] border-t border-slate-800 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-          <i data-lucide="message-square" class="w-4 h-4"></i>
-          <span>Client Voices</span>
-        </div>
-        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          Endorsed by Industry <span class="gold-gradient-text">Captains &amp; Founders</span>
-        </h2>
-        <p class="text-slate-400 text-base">
-          What general counsels, executives, and enterprise decision-makers say about our representation.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="p-8 rounded-2xl bg-[#0e192d] border border-slate-800 relative flex flex-col justify-between">
-          <div class="text-amber-500 mb-4">
-            <i data-lucide="quote" class="w-8 h-8 opacity-40"></i>
-          </div>
-          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
-            "Vanteko &amp; Associates handled our $45M syndicated loan facility with utmost precision. Their grasp of regulatory conditions and ability to structure around complex banking hurdles saved our timeline by three months."
-          </p>
-          <div class="pt-4 border-t border-slate-800 flex items-center space-x-3">
-            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-sm text-amber-400">
-              TD
-            </div>
-            <div>
-              <h5 class="text-sm font-bold text-white">Tunde Danjuma</h5>
-              <p class="text-xs text-slate-400">Chief Executive Officer, Apex Infrastructure Group</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-8 rounded-2xl bg-[#0e192d] border border-amber-500/30 relative flex flex-col justify-between shadow-xl shadow-amber-950/20">
-          <div class="text-amber-500 mb-4">
-            <i data-lucide="quote" class="w-8 h-8 opacity-40"></i>
-          </div>
-          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
-            "When our technology IP was threatened by an unauthorized distributor across West Africa, Vanteko's dispute team secured an urgent Federal High Court injunction within 48 hours. Exceptional responsiveness and courtroom courage."
-          </p>
-          <div class="pt-4 border-t border-slate-800 flex items-center space-x-3">
-            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-sm text-amber-400">
-              FO
-            </div>
-            <div>
-              <h5 class="text-sm font-bold text-white">Folake Osinbajo</h5>
-              <p class="text-xs text-slate-400">General Counsel, PayWave Technologies</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-8 rounded-2xl bg-[#0e192d] border border-slate-800 relative flex flex-col justify-between">
-          <div class="text-amber-500 mb-4">
-            <i data-lucide="quote" class="w-8 h-8 opacity-40"></i>
-          </div>
-          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
-            "Their corporate governance advisory keeps our board ahead of evolving CAMA provisions and SEC compliance standards. They operate as a true strategic partner, not just external counsel."
-          </p>
-          <div class="pt-4 border-t border-slate-800 flex items-center space-x-3">
-            <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-sm text-amber-400">
-              GA
-            </div>
-            <div>
-              <h5 class="text-sm font-bold text-white">Godwin Anyaoku</h5>
-              <p class="text-xs text-slate-400">Managing Director, Horizon Energy Holdings</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- LEGAL INSIGHTS & PUBLICATIONS -->
-  <section id="insights" class="py-24 bg-[#070d19]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-        <div>
-          <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-            <i data-lucide="newspaper" class="w-4 h-4"></i>
-            <span>Thought Leadership</span>
-          </div>
-          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            Legal Insights &amp; <span class="gold-gradient-text">Statutory Briefs</span>
-          </h2>
-        </div>
-        <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
-          In-depth analyses from our partners on regulatory reforms, corporate tax structures, and landmark judicial pronouncements.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <article class="bg-[#0e192d] rounded-2xl border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Legal Books and Scales" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-amber-400 font-semibold mb-2">
-                <span>BANKING &amp; FINTECH</span>
-                <span class="text-slate-400">October 2026</span>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-white hover:text-amber-300 transition-colors">
-                Navigating the New Cross-Border Payment and Virtual Asset Service Provider Guidelines
-              </h3>
-              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
-                A critical assessment of the revised statutory disclosure rules for fintech startups and commercial banks engaging in digital asset settlement.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-amber-400">
-              <a href="#contact" class="flex items-center gap-1.5 hover:underline">
-                Request Full Briefing Paper <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-[#0e192d] rounded-2xl border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Corporate Strategy Meeting" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-amber-400 font-semibold mb-2">
-                <span>CORPORATE GOVERNANCE</span>
-                <span class="text-slate-400">September 2026</span>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-white hover:text-amber-300 transition-colors">
-                Director Liabilities Under Modern Corporate Laws: Avoiding Fiduciary Pitfalls
-              </h3>
-              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
-                Examining the expanding interpretation of personal director liability in insolvency, ESG reporting failures, and corporate restructurings.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-amber-400">
-              <a href="#contact" class="flex items-center gap-1.5 hover:underline">
-                Request Full Briefing Paper <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-[#0e192d] rounded-2xl border border-slate-800 overflow-hidden card-hover-effect flex flex-col">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=800&q=80" alt="Construction and Real Estate Development" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-amber-400 font-semibold mb-2">
-                <span>REAL ESTATE &amp; LAND LAW</span>
-                <span class="text-slate-400">August 2026</span>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-white hover:text-amber-300 transition-colors">
-                Resolving Title Deficiencies in Prime Urban Developments: A Practitioner's Playbook
-              </h3>
-              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
-                Practical strategies for title verification, customary rights extinguishment, and expeditious governor consent processing.
-              </p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-amber-400">
-              <a href="#contact" class="flex items-center gap-1.5 hover:underline">
-                Request Full Briefing Paper <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CLIENT FAQS ACCORDION -->
-  <section id="faq" class="py-24 bg-[#0a1222] border-t border-slate-800">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-          <i data-lucide="help-circle" class="w-4 h-4"></i>
-          <span>Frequently Asked Questions</span>
-        </div>
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
-          Client Engagement &amp; Consultation Information
-        </h2>
-        <p class="text-slate-400 text-sm">
-          Everything you need to know about initiating a confidential engagement with Vanteko &amp; Associates.
-        </p>
-      </div>
-
-      <div class="space-y-4">
-        
-        <div class="faq-item rounded-xl bg-[#0e192d] border border-slate-800 overflow-hidden">
-          <button class="faq-question w-full p-6 text-left flex items-center justify-between focus:outline-none">
-            <span class="font-serif text-lg font-bold text-white">How does Vanteko &amp; Associates handle conflicts of interest?</span>
-            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div class="faq-answer px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4 hidden">
-            Prior to discussing specific case details or accepting confidential documents, our compliance team conducts a rigorous electronic conflict check against our existing client registry and ongoing advisory mandates to ensure strict professional detachment and zero conflict.
-          </div>
-        </div>
-
-        <div class="faq-item rounded-xl bg-[#0e192d] border border-slate-800 overflow-hidden">
-          <button class="faq-question w-full p-6 text-left flex items-center justify-between focus:outline-none">
-            <span class="font-serif text-lg font-bold text-white">What fee and billing arrangements do you offer?</span>
-            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div class="faq-answer px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4 hidden">
-            We offer transparent, customized billing structures based on client needs, including fixed project-based fees for transactions, milestone billing, capped hourly rates, and monthly corporate retainer packages for ongoing company secretarial and day-to-day legal support.
-          </div>
-        </div>
-
-        <div class="faq-item rounded-xl bg-[#0e192d] border border-slate-800 overflow-hidden">
-          <button class="faq-question w-full p-6 text-left flex items-center justify-between focus:outline-none">
-            <span class="font-serif text-lg font-bold text-white">Do you assist foreign corporations seeking to establish Nigerian subsidiaries?</span>
-            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div class="faq-answer px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4 hidden">
-            Yes. We regularly advise international companies on Foreign Direct Investment (FDI), company incorporation at the Corporate Affairs Commission (CAC), Nigerian Investment Promotion Commission (NIPC) registration, expatriate quotas, and NOTAP technology transfer approvals.
-          </div>
-        </div>
-
-        <div class="faq-item rounded-xl bg-[#0e192d] border border-slate-800 overflow-hidden">
-          <button class="faq-question w-full p-6 text-left flex items-center justify-between focus:outline-none">
-            <span class="font-serif text-lg font-bold text-white">Can consultations be conducted virtually?</span>
-            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div class="faq-answer px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4 hidden">
-            Absolutely. We host encrypted virtual consultations via Zoom, Microsoft Teams, and secure enterprise video channels for diaspora clients, multinational boards, and executives unable to visit our Lagos or Abuja offices in person.
-          </div>
-        </div>
-
-        <div class="faq-item rounded-xl bg-[#0e192d] border border-slate-800 overflow-hidden">
-          <button class="faq-question w-full p-6 text-left flex items-center justify-between focus:outline-none">
-            <span class="font-serif text-lg font-bold text-white">What is your turnaround time for urgent litigation matters or injunctions?</span>
-            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div class="faq-answer px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4 hidden">
-            Our dispute resolution group has a dedicated emergency response division capable of drafting urgent court processes, filing ex-parte applications, and appearing for interim injunctive relief within 12 to 24 hours of instruction.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT & ENGAGEMENT SECTION -->
-  <section id="contact" class="py-24 bg-[#070d19] relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid lg:grid-cols-12 gap-12">
-        
-        <!-- Contact Details Column -->
-        <div class="lg:col-span-5 space-y-8">
-          <div>
-            <div class="inline-flex items-center space-x-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-              <i data-lucide="phone" class="w-4 h-4"></i>
-              <span>Initiate Counsel</span>
-            </div>
-            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-              Let's Discuss Your Legal Mandate
-            </h2>
-            <p class="text-slate-400 text-sm sm:text-base mt-4 leading-relaxed">
-              Connect directly with our partners to discuss corporate representation, pending disputes, or strategic transactions. All initial inquiries are handled under strict confidentiality.
-            </p>
-          </div>
-
-          <div class="space-y-6">
-            
-            <!-- Address 1 -->
-            <div class="flex items-start space-x-4 p-5 rounded-xl bg-[#0e192d] border border-slate-800">
-              <div class="p-3 rounded-lg bg-amber-500/10 text-amber-400 flex-shrink-0">
-                <i data-lucide="map-pin" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-sm">Lagos Principal Chambers</h4>
-                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                  The Vanteko Law Tower, Adeola Odeku Street, Victoria Island, Lagos, Nigeria
-                </p>
-                <div class="text-[11px] text-amber-400 font-semibold mt-2">Litigation, Corporate &amp; Banking Practice</div>
-              </div>
-            </div>
-
-            <!-- Address 2 -->
-            <div class="flex items-start space-x-4 p-5 rounded-xl bg-[#0e192d] border border-slate-800">
-              <div class="p-3 rounded-lg bg-amber-500/10 text-amber-400 flex-shrink-0">
-                <i data-lucide="landmark" class="w-6 h-6"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-sm">Abuja Regulatory &amp; Liaison Office</h4>
-                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                  Constitution Plaza, Central Business District, Federal Capital Territory, Abuja
-                </p>
-                <div class="text-[11px] text-amber-400 font-semibold mt-2">Appellate Advocacy &amp; Government Liaison</div>
-              </div>
-            </div>
-
-            <!-- Direct Contact Methods -->
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div class="p-4 rounded-xl bg-[#0e192d] border border-slate-800">
-                <i data-lucide="phone-call" class="w-5 h-5 text-amber-400 mb-2"></i>
-                <div class="text-[11px] text-slate-400 uppercase tracking-wider">Direct Telephone</div>
-                <div class="text-xs font-bold text-white mt-0.5">+234 (0) 1 888 4590</div>
-                <div class="text-[10px] text-slate-400">+234 (0) 803 000 8268</div>
-              </div>
-
-              <div class="p-4 rounded-xl bg-[#0e192d] border border-slate-800">
-                <i data-lucide="mail" class="w-5 h-5 text-amber-400 mb-2"></i>
-                <div class="text-[11px] text-slate-400 uppercase tracking-wider">Direct Email</div>
-                <div class="text-xs font-bold text-white mt-0.5">counsel@vantekoassociates.com</div>
-                <div class="text-[10px] text-slate-400">info@vantekoassociates.com</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Consultation Booking Form -->
-        <div class="lg:col-span-7">
-          <div class="rounded-2xl bg-[#0e192d] border border-amber-500/30 p-8 sm:p-10 shadow-2xl relative">
-            <div class="mb-8">
-              <h3 class="font-serif text-2xl font-bold text-white">Schedule an Attorney Consultation</h3>
-              <p class="text-xs text-slate-400 mt-1">
-                Please complete the form below. A senior associate will review your submission and contact you within 24 hours.
-              </p>
-            </div>
-
-            <form data-form="consultation" class="space-y-6">
-              
-              <div class="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Full Legal Name <span class="text-amber-500">*</span>
-                  </label>
-                  <input type="text" required placeholder="e.g. Dr. Anthony Adeleke" class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Company / Organization
-                  </label>
-                  <input type="text" placeholder="e.g. Zenith Global Ventures" class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                </div>
-              </div>
-
-              <div class="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Official Email Address <span class="text-amber-500">*</span>
-                  </label>
-                  <input type="email" required placeholder="adeleke@company.com" class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Telephone Number <span class="text-amber-500">*</span>
-                  </label>
-                  <input type="tel" required placeholder="+234 803 123 4567" class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                </div>
-              </div>
-
-              <div class="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Practice Group
-                  </label>
-                  <select class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                    <option>Corporate &amp; Commercial Law</option>
-                    <option>Litigation &amp; Arbitration</option>
-                    <option>Banking, Finance &amp; FinTech</option>
-                    <option>Real Estate &amp; Construction</option>
-                    <option>Energy, Oil &amp; Gas Practice</option>
-                    <option>Intellectual Property &amp; Technology</option>
-                    <option>General Corporate Retainer Inquiry</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Preferred Meeting Mode
-                  </label>
-                  <select class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition">
-                    <option>In-Person (Lagos Chambers)</option>
-                    <option>In-Person (Abuja Office)</option>
-                    <option>Encrypted Video Conference (Zoom/Teams)</option>
-                    <option>Telephone Conference</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                  Matter Description &amp; Objectives
-                </label>
-                <textarea rows="4" placeholder="Please provide an executive summary of the transaction, dispute, or advisory requirement..." class="w-full px-4 py-3 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition"></textarea>
-              </div>
-
-              <div class="flex items-center space-x-3 text-xs text-slate-400">
-                <input type="checkbox" id="nda-agree" required class="rounded bg-slate-900 border-slate-700 text-amber-500 focus:ring-amber-500">
-                <label for="nda-agree">
-                  I understand that submitting this inquiry does not create an attorney-client relationship until an engagement letter is formally executed.
-                </label>
-              </div>
-
-              <button type="submit" class="w-full py-4 rounded-lg gold-gradient-bg text-slate-950 font-bold text-sm uppercase tracking-wider hover:opacity-95 transition-opacity shadow-xl shadow-amber-950/40">
-                Submit Confidential Consultation Request
-              </button>
-
-            </form>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- NEWSLETTER / LEGAL BRIEFINGS -->
-  <section class="border-y border-slate-800 bg-[#091120] py-16">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <i data-lucide="book-marked" class="w-10 h-10 text-amber-400 mx-auto mb-4"></i>
-      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-3">
-        Subscribe to The Vanteko Legal Digest
-      </h3>
-      <p class="text-slate-400 text-sm max-w-xl mx-auto mb-8">
-        Receive curated monthly statutory analysis, Nigerian regulatory updates, and corporate compliance briefings delivered straight to your executive inbox.
-      </p>
-      
-      <form id="newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto">
-        <input type="email" required placeholder="Enter corporate email..." class="w-full sm:w-auto flex-1 px-4 py-3 rounded-lg bg-[#070d19] border border-slate-700 text-sm text-white focus:outline-none focus:border-amber-500">
-        <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-lg gold-gradient-bg text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 transition">
-          Subscribe
-        </button>
-      </form>
-      <p class="text-[11px] text-slate-400 mt-3">Zero spam. Strictly senior legal analysis. Unsubscribe at any time.</p>
-    </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer class="bg-[#040810] text-slate-400 text-xs pt-16 pb-12 border-t border-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-14 border-b border-slate-800/80">
-        
-        <!-- Brand Info -->
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center space-x-3">
-            <div class="w-9 h-9 rounded gold-gradient-bg p-0.5">
-              <div class="w-full h-full bg-[#040810] rounded flex items-center justify-center">
-                <span class="font-serif font-bold text-sm gold-gradient-text">V&amp;A</span>
-              </div>
-            </div>
-            <span class="font-serif font-bold text-xl text-white tracking-wide">
-              VANTEKO <span class="text-amber-400">&amp;</span> ASSOCIATES
-            </span>
-          </div>
-
-          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
-            Vanteko &amp; Associates is a leading commercial and dispute resolution law firm dedicated to helping corporations and high-net-worth clients navigate multifaceted legal landscapes with certainty and precision.
-          </p>
-
-          <div class="flex items-center space-x-3 pt-2">
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-500/50 transition">
-              <i data-lucide="linkedin" class="w-4 h-4"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-500/50 transition">
-              <i data-lucide="twitter" class="w-4 h-4"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-500/50 transition">
-              <i data-lucide="facebook" class="w-4 h-4"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-500/50 transition">
-              <i data-lucide="mail" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Practice Links -->
-        <div class="space-y-3">
-          <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider">Practice Areas</h4>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Corporate &amp; Commercial</a></li>
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Litigation &amp; Arbitration</a></li>
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Banking &amp; FinTech</a></li>
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Real Estate &amp; Construction</a></li>
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Energy, Oil &amp; Gas</a></li>
-            <li><a href="#practice-areas" class="hover:text-amber-400 transition">Intellectual Property &amp; Tech</a></li>
-          </ul>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="space-y-3">
-          <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider">The Firm</h4>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="#about" class="hover:text-amber-400 transition">Firm Profile</a></li>
-            <li><a href="#why-us" class="hover:text-amber-400 transition">Why Choose Vanteko</a></li>
-            <li><a href="#attorneys" class="hover:text-amber-400 transition">Partners &amp; Counsel</a></li>
-            <li><a href="#track-record" class="hover:text-amber-400 transition">Landmark Transactions</a></li>
-            <li><a href="#insights" class="hover:text-amber-400 transition">Legal Briefings</a></li>
-            <li><a href="#faq" class="hover:text-amber-400 transition">Engagement FAQs</a></li>
-          </ul>
-        </div>
-
-        <!-- Chambers -->
-        <div class="space-y-3">
-          <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider">Chambers</h4>
-          <div class="space-y-2 text-slate-400 text-xs">
-            <p>
-              <strong class="text-white">Lagos:</strong><br>
-              Adeola Odeku St, Victoria Island
-            </p>
-            <p>
-              <strong class="text-white">Abuja:</strong><br>
-              Constitution Plaza, CBD
-            </p>
-            <p>
-              <strong class="text-white">Enquiries:</strong><br>
-              counsel@vantekoassociates.com
-            </p>
-          </div>
-        </div>
-
+  <footer class="mt-20 border-t border-navy-light bg-navy-deep py-8 text-center text-xs text-ivory-muted">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        &copy; 2026 <strong class="text-white">David Vanteko</strong> &bull; Vanteko &amp; Associates.
       </div>
-
-      <!-- Legal Disclaimer & Copyright -->
-      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-slate-400 text-[11px] gap-4">
-        <div>
-          &copy; 2026 Vanteko &amp; Associates. All rights reserved.
-        </div>
-        <div class="text-center md:text-right max-w-xl text-[10px] text-slate-400 leading-normal">
-          Disclaimer: The information provided on this website is for general informational purposes only and does not constitute formal legal advice. Viewing this website or contacting the firm does not establish an attorney-client relationship.
-        </div>
+      <div class="text-[11px] text-ivory-muted/80">
+        Attorney &bull; Compliance Official &bull; Digital Strategist &bull; Global Virtual Manager
       </div>
-
     </div>
   </footer>
 
-  <!-- CONSULTATION MODAL DIALOG -->
-  <div id="consultation-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
-    <!-- Backdrop -->
-    <div id="modal-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
-
-    <!-- Modal Box -->
-    <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
-      <div id="modal-container" class="relative transform overflow-hidden rounded-2xl bg-[#0e192d] border border-amber-500/40 text-left shadow-2xl transition-all duration-300 opacity-0 scale-95 sm:my-8 sm:w-full sm:max-w-2xl p-6 sm:p-8">
-        
-        <!-- Close button -->
-        <button data-close-modal="consultation" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800 transition">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-
-        <div class="flex items-center space-x-3 mb-4">
-          <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400">
-            <i data-lucide="scale" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="font-serif text-2xl font-bold text-white">Private Legal Consultation</h3>
-            <p class="text-xs text-amber-400/90 font-medium">Direct briefing with a Vanteko &amp; Associates Partner</p>
-          </div>
-        </div>
-
-        <p class="text-xs text-slate-300 mb-6 leading-relaxed">
-          Please provide details regarding your legal situation or corporate transaction. All discussions are confidential and covered under strict attorney-client privilege.
-        </p>
-
-        <form data-form="consultation" class="space-y-4 text-left">
-          
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Full Legal Name *</label>
-              <input type="text" required placeholder="Your full name" class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Company / Organization</label>
-              <input type="text" placeholder="Entity name" class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-            </div>
-          </div>
-
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Email Address *</label>
-              <input type="email" required placeholder="corporate@email.com" class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Phone Number *</label>
-              <input type="tel" required placeholder="+234..." class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-            </div>
-          </div>
-
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Practice Area</label>
-              <select class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-                <option>Corporate &amp; Commercial Advisory</option>
-                <option>Commercial Litigation &amp; Arbitration</option>
-                <option>Banking, Finance &amp; FinTech Regulatory</option>
-                <option>Real Estate, Construction &amp; Infrastructure</option>
-                <option>Energy, Oil &amp; Gas Practice</option>
-                <option>Intellectual Property &amp; Technology</option>
-                <option>Private Client Wealth &amp; Succession</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Preferred Location / Channel</label>
-              <select class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500">
-                <option>Virtual Video Conference (Zoom/Teams)</option>
-                <option>In-Person (Lagos Chambers, VI)</option>
-                <option>In-Person (Abuja Office, CBD)</option>
-                <option>Telephone Conference</option>
-              </select>
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Brief Summary of the Legal Matter *</label>
-            <textarea rows="3" required placeholder="Describe the transaction, dispute, or advisory requirement..." class="w-full px-3.5 py-2.5 bg-[#070d19] border border-slate-700 rounded-lg text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
-          </div>
-
-          <div class="pt-2">
-            <button type="submit" class="w-full py-3.5 rounded-lg gold-gradient-bg text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 transition shadow-lg shadow-amber-950/30">
-              Submit &amp; Request Partner Availability
-            </button>
-          </div>
-
-        </form>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- TOAST NOTIFICATION CONTAINER (Auto injected by JS if needed) -->
-  <div id="toast-notification" class="fixed bottom-6 right-6 max-w-md bg-slate-900 border border-amber-500/40 text-white px-5 py-4 rounded-xl shadow-2xl flex items-start space-x-3 z-50 transform translate-y-28 opacity-0 transition-all duration-300">
-    <div class="p-1 rounded-full bg-amber-500/20 text-amber-400 flex-shrink-0 mt-0.5">
-      <i data-lucide="check" class="w-4 h-4"></i>
-    </div>
-    <div class="flex-1">
-      <h4 class="text-sm font-semibold text-amber-300">Request Confirmed</h4>
-      <p id="toast-message" class="text-xs text-slate-300 mt-0.5 leading-relaxed"></p>
-    </div>
-    <button id="toast-close" class="text-slate-400 hover:text-white transition">
-      <i data-lucide="x" class="w-4 h-4"></i>
-    </button>
-  </div>
-
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
+  <!-- SCRIPT -->
+  <script>
+    // Initialize Lucide Icons
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
 </body>
 </html>
