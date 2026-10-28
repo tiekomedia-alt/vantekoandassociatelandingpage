@@ -87,7 +87,7 @@
           <span>Check Availability</span>
         </a>
 
-        <a href="#book" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg bg-gold text-navy font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg shadow-gold/10 flex items-center gap-2">
+        <a href="https://calendly.com/vantekoandassociates/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vantekoandassociates/30min'});return false;" target="_blank" rel="noopener noreferrer" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg bg-gold text-navy font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg shadow-gold/10 flex items-center gap-2">
           <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
           <span>Book Consultation</span>
         </a>
@@ -175,7 +175,8 @@
           <!-- Calendly Booking Button -->
           <a 
             id="book-consultation-btn"
-            href="https://calendly.com" 
+            href="https://calendly.com/vantekoandassociates/30min" 
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vantekoandassociates/30min'});return false;"
             target="_blank" 
             rel="noopener noreferrer"
             class="px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wide uppercase transition-all duration-300 shadow-xl shadow-gold/20 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0"
@@ -299,13 +300,13 @@
 
     <!-- CALENDLY SCHEDULING / ACTION SECTION -->
     <section id="book" class="mt-20 sm:mt-28 scroll-mt-24">
-      <div class="rounded-3xl bg-navy-card border-2 border-gold/40 p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden shadow-2xl">
+      <div class="rounded-3xl bg-navy-card border-2 border-gold/40 p-6 sm:p-10 lg:p-12 text-center relative overflow-hidden shadow-2xl">
         
         <!-- Subtle Background Glow -->
         <div class="absolute -top-24 -left-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+        <div class="relative z-10 max-w-3xl mx-auto space-y-6">
           <div class="w-16 h-16 rounded-2xl bg-gold/15 border border-gold/50 text-gold mx-auto flex items-center justify-center shadow-lg">
             <i data-lucide="calendar" class="w-8 h-8"></i>
           </div>
@@ -314,25 +315,26 @@
             Click the Link &bull; <span class="text-gold">Let’s Discuss</span>
           </h2>
 
-          <p class="text-base text-ivory-muted leading-relaxed">
+          <p class="text-base text-ivory-muted leading-relaxed max-w-xl mx-auto">
             Ready to explore an engagement, resolve a compliance question, or streamline your operations? Pick a time directly on my calendar below.
           </p>
 
-          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             
-            <!-- Direct Calendly Link Button -->
+            <!-- Direct Calendly Link Button with Popup -->
             <a 
               id="calendly-direct-link"
-              href="https://calendly.com" 
+              href="https://calendly.com/vantekoandassociates/30min" 
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vantekoandassociates/30min'});return false;"
               target="_blank" 
               rel="noopener noreferrer"
               class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-gold/25 flex items-center justify-center gap-3 transform hover:scale-105"
             >
-              <i data-lucide="calendar" class="w-5 h-5 text-navy"></i>
-              <span>Open Calendly Schedule</span>
+              <i data-lucide="calendar-check" class="w-5 h-5 text-navy"></i>
+              <span>Book 30-Min Consultation</span>
             </a>
 
-            <!-- WhatsApp or Email button -->
+            <!-- Direct Email button -->
             <a 
               href="mailto:davidvanteko@gmail.com" 
               class="w-full sm:w-auto px-7 py-4 rounded-xl border border-gold/40 bg-navy hover:bg-navy-light text-ivory font-semibold text-sm transition flex items-center justify-center gap-2"
@@ -343,8 +345,17 @@
 
           </div>
 
-          <!-- Configuration Note for User -->
-          <p class="text-xs text-ivory-muted/70 pt-4">
+          <!-- Calendly Inline Widget -->
+          <div class="pt-6">
+            <div 
+              class="calendly-inline-widget rounded-2xl overflow-hidden border border-navy-light shadow-inner bg-navy-deep" 
+              data-url="https://calendly.com/vantekoandassociates/30min?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=111c2e&text_color=f6f2e9&primary_color=c6a66b" 
+              style="min-width:320px;height:720px;"
+            ></div>
+          </div>
+
+          <!-- Confidentiality Note -->
+          <p class="text-xs text-ivory-muted/70 pt-2">
             🔒 All strategic conversations are treated with utmost professional confidentiality and discretion.
           </p>
 

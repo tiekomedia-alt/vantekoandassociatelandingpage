@@ -21,7 +21,7 @@ Personal executive landing page for **David Vanteko**: Attorney, Compliance Offi
   2. Compliance Official
   3. Digital Strategist
   4. Global Virtual Manager
-- **Calendly Integration**: Direct consultation booking button with prominent call-to-action.
+- **Calendly Integration**: Direct consultation booking via `https://calendly.com/vantekoandassociates/30min` with both popup and embedded on-page scheduler.
 - **Ultra-Lightweight & Fast**: Single page, zero heavy frameworks, instant mobile responsiveness.
 
 ---
